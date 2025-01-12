@@ -3,7 +3,7 @@ import { ethers } from "ethers";
 import "./index.css";
 import Header from "./components/Header";
 import List from "./components/List";
-import Factory from "../../artifacts/contracts/Factory.sol/Factory.json";
+import Factory from "../abis/Factory.json";
 import config from "../config.json";
 import images from "./images.json";
 import Token from "./components/Token";
@@ -59,7 +59,7 @@ export default function Home() {
 
         const factory = new ethers.Contract(
           config[network.chainId].factory.address,
-          Factory.abi,
+          Factory,
           signer
         );
         setFactory(factory);
