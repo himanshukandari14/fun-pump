@@ -26,11 +26,11 @@
 ### 5. Run deployment script
 In a separate terminal execute:
 
-`$ npx hardhat ignition deploy ignition/modules/Factory.js --network localhost`
+`$ npx hardhat ignition deploy ignition/modules/Factory.js --network sepolia`
 
 If you have previously deployed you may want to append `--reset` at the end:
 
-`$ npx hardhat ignition deploy ignition/modules/Factory.js --network localhost --reset`
+`$ npx hardhat ignition deploy ignition/modules/Factory.js --network sepolia --reset`
 
 ### 6. Start frontend
 `$ npm run dev`
