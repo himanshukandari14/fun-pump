@@ -124,7 +124,7 @@ export default function Home() {
         </div>
 
         <div className="listings">
-          <h1>new listings</h1>
+          <h1>New listings</h1>
 
           <div className="tokens">
             {!account ? (

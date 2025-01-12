@@ -82,7 +82,7 @@ contract Factory {
         TokenSale storage sale = tokenToSale[_token];
 
         require(sale.isOpen == true, "Factory: Buying Closed");
-         require(_amount >= 1 ether, "Factory: Amount  too low");
+         require(_amount >= 0.00001 ether, "Factory: Amount  too low");
           require(_amount <= 10000 ether, "Factory: Amount exceeded");
         //calc price of 1 token based upon total budget
 
